@@ -50,6 +50,12 @@ export interface Risk {
   created_by: string | null;
 }
 
+export interface AppUser {
+  email: string;
+  role: "admin" | "member";
+  created_at: string;
+}
+
 export interface ProjectStructure {
   phases: Phase[];
   tas: Ta[];

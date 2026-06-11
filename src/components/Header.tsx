@@ -18,7 +18,8 @@ const VIEWS: [string, string][] = [
 export function Header() {
   const pathname = usePathname();
   const router = useRouter();
-  const { structure, risks, saveMsg, statusOf, notesOf } = useProject();
+  const { structure, risks, saveMsg, statusOf, notesOf, isAdmin } =
+    useProject();
 
   function exportJSON() {
     const today = todayHalf();
@@ -90,6 +91,11 @@ export function Header() {
             {label}
           </Link>
         ))}
+        {isAdmin && (
+          <Link href="/nutzer" className={pathname === "/nutzer" ? "active" : ""}>
+            Nutzer
+          </Link>
+        )}
       </nav>
     </header>
   );

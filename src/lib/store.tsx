@@ -26,6 +26,7 @@ interface ProjectContextValue {
   states: Record<string, TaskState>;
   risks: Risk[];
   userEmail: string;
+  isAdmin: boolean;
   saveMsg: string;
   toastMsg: string;
   modalAp: string | null;
@@ -55,12 +56,14 @@ export function ProjectProvider({
   initialStates,
   initialRisks,
   userEmail,
+  isAdmin,
   children,
 }: {
   structure: ProjectStructure;
   initialStates: TaskState[];
   initialRisks: Risk[];
   userEmail: string;
+  isAdmin: boolean;
   children: ReactNode;
 }) {
   const supabase = useMemo(() => createClient(), []);
@@ -289,6 +292,7 @@ export function ProjectProvider({
     states,
     risks,
     userEmail,
+    isAdmin,
     saveMsg,
     toastMsg,
     modalAp,

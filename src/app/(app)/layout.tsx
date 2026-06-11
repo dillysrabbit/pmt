@@ -4,6 +4,7 @@ import { ProjectProvider } from "@/lib/store";
 import { Header } from "@/components/Header";
 import { DetailModal } from "@/components/DetailModal";
 import { Toast } from "@/components/Toast";
+import { AccessDenied } from "@/components/AccessDenied";
 import type {
   Ap,
   Milestone,
@@ -26,6 +27,17 @@ export default async function AppLayout({
     data: { user },
   } = await supabase.auth.getUser();
   if (!user) redirect("/login");
+
+  // Allowlist-Check: ohne app_users-Eintrag keine Daten (RLS) und kein UI
+  const { data: appUser } = await supabase
+    .from("app_users")
+    .select("role")
+    .eq("email", (user.email ?? "").toLowerCase())
+    .maybeSingle();
+
+  if (!appUser) {
+    return <AccessDenied email={user.email ?? ""} />;
+  }
 
   const [phases, tas, aps, milestones, deps, states, risks] =
     await Promise.all([
@@ -60,6 +72,7 @@ export default async function AppLayout({
       initialStates={(states.data ?? []) as TaskState[]}
       initialRisks={(risks.data ?? []) as Risk[]}
       userEmail={user.email ?? ""}
+      isAdmin={appUser.role === "admin"}
     >
       <Header />
       <main>{children}</main>
