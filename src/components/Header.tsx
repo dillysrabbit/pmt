@@ -58,6 +58,11 @@ export function Header() {
     URL.revokeObjectURL(url);
   }
 
+  async function exportPDF() {
+    const { exportProjectPdf } = await import("@/lib/pdf");
+    exportProjectPdf(structure, statusOf, notesOf, risks);
+  }
+
   async function signOut() {
     await createClient().auth.signOut();
     router.push("/login");
@@ -77,6 +82,9 @@ export function Header() {
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <span className="hd-save">{saveMsg}</span>
+          <button className="hd-export" onClick={exportPDF}>
+            PDF ↓
+          </button>
           <button className="hd-export" onClick={exportJSON}>
             Export ↓
           </button>

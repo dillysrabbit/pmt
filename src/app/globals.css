@@ -702,8 +702,19 @@ main {
   color: #999;
   margin-top: 8px;
 }
-.mo-close {
+.mo-pdf {
   margin-top: 14px;
+  width: 100%;
+  background: #fff;
+  color: #444;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.mo-close {
+  margin-top: 8px;
   width: 100%;
   background: var(--ink);
   color: #fff;

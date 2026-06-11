@@ -69,6 +69,11 @@ export function DetailModal() {
     debounce.current = setTimeout(() => saveNotes(ap!.id, value), 500);
   }
 
+  async function exportPdf() {
+    const { exportApPdf } = await import("@/lib/pdf");
+    exportApPdf(structure, ap!, state, lastChanged);
+  }
+
   const lastChanged =
     state && updatedBy
       ? `Zuletzt geändert von ${editorEmail ?? "…"} am ${new Date(
@@ -138,6 +143,9 @@ export function DetailModal() {
           onChange={(e) => onNotesInput(e.target.value)}
         />
         {lastChanged && <div className="mo-audit">{lastChanged}</div>}
+        <button className="mo-pdf" onClick={exportPdf}>
+          Als PDF exportieren ↓
+        </button>
         <button className="mo-close" onClick={closeDetail}>
           Schließen
         </button>
