@@ -23,7 +23,8 @@ export function Liste() {
 
   const list = aps.filter((a) => {
     if (fPhase && phaseOf(a, tas) !== fPhase) return false;
-    if (fResp && a.responsible !== fResp) return false;
+    // Substring-Match: "PA / Bezugs-PFK" zählt für beide Rollen
+    if (fResp && !a.responsible.includes(fResp)) return false;
     if (fStatus && statusOf(a.id) !== fStatus) return false;
     if (
       fSearch &&

@@ -25,8 +25,8 @@ export const ORDER: Status[] = ["offen", "laufend", "erledigt"];
 
 export const RESPONSIBLES = [
   "Stv. PDL",
-  "Zentrale PA",
-  "PA vor Ort",
+  "PA",
+  "Bezugs-PFK",
   "Azubis",
   "PDL",
   "Pflegeteam",
