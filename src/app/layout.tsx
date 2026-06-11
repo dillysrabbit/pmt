@@ -12,11 +12,18 @@ export const metadata: Metadata = {
   title: "Projektsteuerung – Strukturierte Dienstübergaben",
   description:
     "Projektsteuerung für die Einführung strukturierter Dienstübergaben, Maria-Hötte-Stift",
+  applicationName: "Dienstübergaben",
+  appleWebApp: {
+    capable: true,
+    title: "Dienstübergaben",
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: "#CC0000",
 };
 
 export default function RootLayout({

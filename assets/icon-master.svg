@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="112" fill="#CC0000"/>
+  <!-- Klemmbrett -->
+  <rect x="136" y="128" width="240" height="280" rx="30" fill="#FFFFFF"/>
+  <!-- Klammer oben -->
+  <rect x="216" y="104" width="80" height="46" rx="16" fill="#1A1A1A"/>
+  <!-- Grüner Haken (Blickfang) -->
+  <path d="M196 250 L240 296 L330 196" stroke="#16A34A" stroke-width="38" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Checklistenzeilen -->
+  <rect x="176" y="332" width="160" height="20" rx="10" fill="#E2E2E2"/>
+  <rect x="176" y="368" width="112" height="20" rx="10" fill="#E2E2E2"/>
+</svg>
