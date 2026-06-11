@@ -1,0 +1,172 @@
+<svg width="1568" height="640" viewBox="0 0 1568 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EFE6D7"/>
+      <stop offset="1" stop-color="#E4D7C2"/>
+    </linearGradient>
+    <linearGradient id="winlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF1D9"/>
+      <stop offset="1" stop-color="#EFE0BE"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E6D4B6"/>
+      <stop offset="1" stop-color="#D8C09B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Raum -->
+  <rect width="1568" height="640" fill="url(#wall)"/>
+  <!-- Low-Poly-Facetten an der Wand -->
+  <polygon points="0,0 520,0 360,360 0,300" fill="#F4ECDD" opacity="0.6"/>
+  <polygon points="180,0 540,120 300,420 120,360" fill="#EADECB" opacity="0.5"/>
+  <polygon points="0,300 360,360 200,640 0,640" fill="#E8DAC4" opacity="0.5"/>
+
+  <!-- Boden -->
+  <polygon points="0,540 1568,470 1568,640 0,640" fill="url(#floor)"/>
+  <polygon points="0,560 700,520 520,640 0,640" fill="#DFCBA8" opacity="0.6"/>
+
+  <!-- Gerahmtes Landschaftsbild links -->
+  <rect x="70" y="120" width="190" height="170" rx="6" fill="#FBF6EC" stroke="#C9A876" stroke-width="8"/>
+  <polygon points="78,200 140,150 200,210 252,170 252,282 78,282" fill="#9DBE86"/>
+  <polygon points="78,235 130,200 185,240 252,205 252,282 78,282" fill="#6E9B57"/>
+  <polygon points="78,255 110,235 160,262 252,235 252,282 78,282" fill="#587E45"/>
+  <circle cx="210" cy="158" r="16" fill="#F0D79B" opacity="0.8"/>
+
+  <!-- Holzbank links -->
+  <rect x="40" y="560" width="430" height="22" rx="6" fill="#C79A62"/>
+  <rect x="40" y="560" width="430" height="8" rx="4" fill="#D8AE76"/>
+  <rect x="70" y="582" width="20" height="56" fill="#B6884F"/>
+  <rect x="420" y="582" width="20" height="56" fill="#B6884F"/>
+
+  <!-- Großes Fenster rechts -->
+  <rect x="1020" y="30" width="540" height="520" fill="url(#winlight)"/>
+  <polygon points="1040,60 1180,120 1090,300 1040,250" fill="#A9C98A" opacity="0.7"/>
+  <polygon points="1230,70 1380,50 1340,260 1240,250" fill="#BBD79C" opacity="0.6"/>
+  <polygon points="1400,90 1540,130 1520,320 1410,300" fill="#9CC07E" opacity="0.6"/>
+  <!-- Fenster-Sprossen -->
+  <rect x="1020" y="30" width="540" height="14" fill="#B98F58"/>
+  <rect x="1280" y="30" width="14" height="520" fill="#B98F58"/>
+  <rect x="1020" y="280" width="540" height="12" fill="#B98F58"/>
+  <rect x="1010" y="30" width="16" height="520" fill="#A87C46"/>
+
+  <!-- Bücherregal -->
+  <rect x="600" y="40" width="300" height="440" rx="6" fill="#9A6E43"/>
+  <rect x="616" y="56" width="268" height="408" fill="#B07F4E"/>
+  <g fill="#8A6238">
+    <rect x="616" y="150" width="268" height="10"/>
+    <rect x="616" y="250" width="268" height="10"/>
+    <rect x="616" y="350" width="268" height="10"/>
+  </g>
+  <!-- Bücher -->
+  <g>
+    <rect x="630" y="92" width="14" height="56" fill="#7C8F6B"/>
+    <rect x="648" y="100" width="12" height="48" fill="#B5664B"/>
+    <rect x="664" y="96" width="14" height="52" fill="#C9A24E"/>
+    <rect x="700" y="100" width="40" height="48" fill="#6E8597"/>
+    <rect x="820" y="96" width="14" height="52" fill="#9DAE7C"/>
+    <rect x="838" y="100" width="12" height="48" fill="#B5664B"/>
+  </g>
+  <!-- Topfpflanzen im Regal -->
+  <g>
+    <rect x="640" y="190" width="40" height="40" rx="5" fill="#C06B4A"/>
+    <polygon points="660,190 632,130 666,140" fill="#6E9B57"/>
+    <polygon points="660,190 690,135 700,165" fill="#82B36A"/>
+    <polygon points="660,190 658,120 686,130" fill="#94C47C"/>
+  </g>
+  <g>
+    <rect x="760" y="195" width="44" height="38" rx="5" fill="#B5664B"/>
+    <polygon points="782,195 752,140 786,150" fill="#5F8F4E"/>
+    <polygon points="782,195 812,150 822,180" fill="#74A45C"/>
+  </g>
+  <g>
+    <rect x="700" y="300" width="40" height="36" rx="5" fill="#C06B4A"/>
+    <polygon points="720,300 694,250 724,260" fill="#6E9B57"/>
+    <polygon points="720,300 748,255 756,285" fill="#88B96E"/>
+  </g>
+
+  <!-- Runder Holztisch + Stühle -->
+  <ellipse cx="840" cy="500" rx="180" ry="46" fill="#B07F4E"/>
+  <ellipse cx="840" cy="492" rx="180" ry="42" fill="#C2925C"/>
+  <rect x="700" y="500" width="14" height="80" fill="#A87C46"/>
+  <rect x="966" y="500" width="14" height="80" fill="#A87C46"/>
+  <rect x="690" y="430" width="70" height="70" rx="8" fill="#B6884F"/>
+  <rect x="700" y="370" width="50" height="70" rx="6" fill="#C2925C"/>
+
+  <!-- ===== Pflegeteam ===== -->
+  <!-- Frau, grüne Kasack (Stv. PDL-Gespräch) -->
+  <g>
+    <rect x="845" y="360" width="86" height="210" rx="22" fill="#9DB082"/>
+    <rect x="845" y="360" width="86" height="60" rx="22" fill="#A8BC8E"/>
+    <rect x="858" y="470" width="60" height="110" fill="#8AA06F"/>
+    <circle cx="888" cy="318" r="40" fill="#D7A982"/>
+    <path d="M850 312 a38 40 0 0 1 76 0 q-10 -36 -38 -36 q-28 0 -38 36z" fill="#5A4632"/>
+    <path d="M922 320 q26 6 24 46 l-12 -2 q4 -30 -16 -38z" fill="#5A4632"/>
+    <circle cx="900" cy="316" r="3.5" fill="#3a2d20"/>
+    <path d="M892 332 q12 8 22 0" stroke="#7a5a3e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- erhobener Arm (Gestik) -->
+    <path d="M930 410 q60 -30 96 6" stroke="#9DB082" stroke-width="26" fill="none" stroke-linecap="round"/>
+    <circle cx="1030" cy="420" r="15" fill="#D7A982"/>
+  </g>
+
+  <!-- Älterer Mann, hellblaue Kasack -->
+  <g>
+    <rect x="965" y="350" width="100" height="230" rx="24" fill="#A9C0D6"/>
+    <rect x="965" y="350" width="100" height="60" rx="24" fill="#B7CBDD"/>
+    <rect x="980" y="470" width="70" height="110" fill="#3C4654"/>
+    <rect x="1006" y="378" width="20" height="56" rx="4" fill="#93AFC8"/>
+    <circle cx="1015" cy="300" r="42" fill="#D8AC85"/>
+    <path d="M974 296 q4 -46 41 -46 q37 0 41 46 q-20 -16 -41 -16 q-21 0 -41 16z" fill="#C9C9CC"/>
+    <rect x="996" y="296" width="38" height="14" rx="6" fill="none" stroke="#5a5a5a" stroke-width="3"/>
+    <circle cx="1005" cy="303" r="3.2" fill="#3a2d20"/>
+    <circle cx="1027" cy="303" r="3.2" fill="#3a2d20"/>
+    <path d="M1002 322 q14 10 28 0" stroke="#9a7a5a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M998 318 q17 14 36 0" fill="#EDE6DD" opacity="0.6"/>
+  </g>
+
+  <!-- Mann, dunkelblaue Kasack, mit Klemmbrett -->
+  <g>
+    <rect x="1110" y="360" width="92" height="220" rx="22" fill="#7E93A8"/>
+    <rect x="1110" y="360" width="92" height="58" rx="22" fill="#8DA1B5"/>
+    <rect x="1124" y="475" width="64" height="105" fill="#5E6E80"/>
+    <circle cx="1156" cy="312" r="39" fill="#A9794F"/>
+    <path d="M1118 308 q4 -42 38 -42 q34 0 38 42 q-19 -14 -38 -14 q-19 0 -38 14z" fill="#2C2118"/>
+    <rect x="1150" y="280" width="14" height="20" fill="#2C2118"/>
+    <circle cx="1147" cy="312" r="3" fill="#2a1f14"/>
+    <circle cx="1167" cy="312" r="3" fill="#2a1f14"/>
+    <path d="M1146 328 q12 7 24 0" stroke="#6a4a30" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Klemmbrett -->
+    <rect x="1188" y="430" width="52" height="66" rx="4" fill="#EDE7DA" transform="rotate(8 1214 463)"/>
+    <rect x="1198" y="424" width="20" height="10" rx="3" fill="#3A3A3A" transform="rotate(8 1208 429)"/>
+  </g>
+
+  <!-- Mann, olivgrüne Kasack, mit Lanyard -->
+  <g>
+    <rect x="1230" y="360" width="92" height="220" rx="22" fill="#8C9A6B"/>
+    <rect x="1230" y="360" width="92" height="58" rx="22" fill="#9AA87A"/>
+    <rect x="1244" y="475" width="64" height="105" fill="#79865C"/>
+    <!-- Lanyard -->
+    <path d="M1262 362 l14 70 14 -70" fill="none" stroke="#3E6E8E" stroke-width="6"/>
+    <rect x="1268" y="430" width="20" height="26" rx="3" fill="#E8E8E8"/>
+    <circle cx="1276" cy="312" r="39" fill="#E0B48B"/>
+    <path d="M1238 306 q5 -40 38 -40 q33 0 38 40 q-19 -13 -38 -13 q-19 0 -38 13z" fill="#6A4A30"/>
+    <circle cx="1267" cy="312" r="3" fill="#3a2d20"/>
+    <circle cx="1287" cy="312" r="3" fill="#3a2d20"/>
+    <path d="M1266 328 q12 7 22 0" stroke="#a07a52" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Frau, terrakotta Kasack, mit Notizbuch -->
+  <g>
+    <rect x="1352" y="368" width="86" height="212" rx="22" fill="#C08566"/>
+    <rect x="1352" y="368" width="86" height="56" rx="22" fill="#CC9275"/>
+    <rect x="1366" y="478" width="58" height="102" fill="#A86E52"/>
+    <circle cx="1394" cy="320" r="38" fill="#C9966B"/>
+    <path d="M1357 316 q4 -40 37 -40 q33 0 37 40 q-8 -30 -37 -30 q-29 0 -37 30z" fill="#3A2A1C"/>
+    <ellipse cx="1394" cy="266" rx="16" ry="12" fill="#3A2A1C"/>
+    <circle cx="1385" cy="320" r="3" fill="#2a1f14"/>
+    <circle cx="1403" cy="320" r="3" fill="#2a1f14"/>
+    <path d="M1384 334 q11 7 20 0" stroke="#8a5a3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Notizbuch -->
+    <rect x="1330" y="430" width="50" height="64" rx="4" fill="#5E6E80" transform="rotate(-10 1355 462)"/>
+    <rect x="1338" y="438" width="34" height="48" rx="2" fill="#EDE7DA" transform="rotate(-10 1355 462)"/>
+  </g>
+</svg>
