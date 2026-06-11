@@ -66,6 +66,10 @@ export function Header() {
 
   return (
     <header>
+      <div className="hd-art" aria-hidden="true">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/header-art.png" alt="" />
+      </div>
       <div className="hd-row">
         <div>
           <div className="hd-eyebrow">Projektsteuerung</div>

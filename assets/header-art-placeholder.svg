@@ -1,0 +1,45 @@
+<svg width="1400" height="320" viewBox="0 0 1400 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Warmer Hintergrund mit Fensterlicht -->
+  <rect width="1400" height="320" fill="#F3E9DC"/>
+  <polygon points="0,0 420,0 320,320 0,320" fill="#F9F2E7"/>
+  <polygon points="380,0 760,0 660,320 480,320" fill="#EFE3D0" opacity="0.7"/>
+  <polygon points="900,0 1400,0 1400,320 1020,320" fill="#EAD9C2" opacity="0.6"/>
+  <!-- Fensterrahmen -->
+  <rect x="60" y="20" width="14" height="300" fill="#C9A876"/>
+  <rect x="330" y="20" width="14" height="300" fill="#C9A876"/>
+  <rect x="60" y="20" width="284" height="12" fill="#C9A876"/>
+  <polygon points="90,40 200,90 130,200 74,150" fill="#DCE8D2" opacity="0.8"/>
+  <polygon points="210,50 320,40 300,170 220,180" fill="#E5EEDC" opacity="0.7"/>
+  <!-- Low-Poly-Pflanzen -->
+  <g>
+    <polygon points="480,300 540,300 535,250 485,250" fill="#B98A52"/>
+    <polygon points="478,252 542,252 510,238" fill="#A87844"/>
+    <polygon points="510,240 470,170 500,160" fill="#5F8F4E"/>
+    <polygon points="510,240 545,150 575,175" fill="#6FA35B"/>
+    <polygon points="510,240 505,140 535,135" fill="#82B36A"/>
+    <polygon points="510,240 455,200 470,230" fill="#54804A"/>
+  </g>
+  <g>
+    <polygon points="700,310 770,310 762,245 708,245" fill="#C49A62"/>
+    <polygon points="735,248 690,150 725,140" fill="#67984F"/>
+    <polygon points="735,248 770,130 805,160" fill="#7BAD60"/>
+    <polygon points="735,248 730,120 765,118" fill="#8FBE73"/>
+    <polygon points="735,248 660,190 680,235" fill="#5A8A4C"/>
+    <polygon points="735,248 810,200 795,240" fill="#74A45C"/>
+  </g>
+  <g>
+    <polygon points="950,305 1010,305 1004,255 956,255" fill="#B98A52"/>
+    <polygon points="980,256 950,175 980,168" fill="#6FA35B"/>
+    <polygon points="980,256 1015,160 1042,185" fill="#82B36A"/>
+    <polygon points="980,256 975,150 1005,148" fill="#95C47C"/>
+  </g>
+  <g>
+    <polygon points="1180,315 1260,315 1250,240 1190,240" fill="#C49A62"/>
+    <polygon points="1220,244 1170,140 1210,130" fill="#5F8F4E"/>
+    <polygon points="1220,244 1265,120 1300,150" fill="#74A45C"/>
+    <polygon points="1220,244 1215,110 1250,108" fill="#88B96E"/>
+    <polygon points="1220,244 1140,185 1162,228" fill="#54804A"/>
+  </g>
+  <!-- Boden -->
+  <polygon points="0,290 1400,260 1400,320 0,320" fill="#D9C5A8" opacity="0.5"/>
+</svg>

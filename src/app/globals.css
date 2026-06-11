@@ -50,6 +50,46 @@ header {
   position: sticky;
   top: 0;
   z-index: 40;
+  overflow: hidden;
+}
+.hd-art {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(46%, 700px);
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 32%,
+    black 72%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 32%,
+    black 72%,
+    transparent 100%
+  );
+  opacity: 0.85;
+}
+.hd-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+.hd-row,
+.main-nav {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 760px) {
+  .hd-art {
+    display: none;
+  }
 }
 .hd-row {
   display: flex;
